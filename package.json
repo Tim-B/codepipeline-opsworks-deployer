@@ -1,0 +1,20 @@
+{
+  "name": "codepipeline-opsworks-deployer",
+  "version": "0.0.0",
+  "description": "Deploys from Code Pipeline to OpsWorks",
+  "private": "true",
+  "devDependencies": {
+    "grunt": "0.4.*",
+    "grunt-aws-lambda": "0.*"
+  },
+  "dependencies": {
+    "async" : "1.4.0",
+    "aws-sdk": "2.1.40"
+  },
+  "bundledDependencies": [
+    "async",
+    "aws-sdk"
+  ],
+  "author": "",
+  "license": "BSD"
+}

@@ -1,0 +1,11 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:us-east-1:608866947342:test:8a1787b2-2665-4fb6-9e12-2a4f7a5d1ed4",
+      "Sns": {
+        "Message": "{\"Records\": [\n    {\n      \"eventVersion\": \"2.0\",\n      \"eventSource\": \"aws:s3\",\n      \"awsRegion\": \"us-east-1\",\n      \"eventTime\": \"2015-07-26T05:24:44.333Z\",\n      \"eventName\": \"ObjectCreated:CompleteMultipartUpload\",\n      \"userIdentity\": {\n        \"principalId\": \"AWS:AROAJAA54R2DKN3MLIHJU:1437888282938\"\n      },\n      \"requestParameters\": {\n        \"sourceIPAddress\": \"10.127.202.55\"\n      },\n      \"responseElements\": {\n        \"x-amz-request-id\": \"82954680B93F21B9\",\n        \"x-amz-id-2\": \"4bVxcKdiiirCh83jnagnmpunfKC28IIgvy6Ny4/ocbTkpXEaHyDYV3sdWlStuIoF\"\n      },\n      \"s3\": {\n        \"s3SchemaVersion\": \"1.0\",\n        \"configurationId\": \"Putnotif\",\n        \"bucket\": {\n          \"name\": \"codepipeline-us-east-1-7066678721\",\n          \"ownerIdentity\": {\n            \"principalId\": \"A2JN1S0G54RBQR\"\n          },\n          \"arn\": \"arn:aws:s3:::codepipeline-us-east-1-7066678721\"\n        },\n        \"object\": {\n          \"key\": \"test-pipeline/opsworks/reOLsL1.zip\",\n          \"size\": 18759,\n          \"eTag\": \"b5484d0fcf7c813cfe40b407cedbd641-1\"\n        }\n      }\n    }\n  ]}"}
+  }
+  ]
+}
