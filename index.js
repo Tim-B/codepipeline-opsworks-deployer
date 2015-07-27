@@ -7,9 +7,11 @@ var actions = {
 
 exports.handler = function (event, context) {
     var message = JSON.parse(event.Records[0].Sns.Message);
-    if(typeof message.Action != undefined && typeof message.Action == 'monitorJob') {
-        actions.monitorJob(message, context);
-    } else {
-        actions.handleJob(message, context);
+    if(typeof message.Action == 'undefined') {
+        message.Action = 'handleJob';
+    }
+
+    if(typeof actions[message.Action] != 'undefined') {
+        actions[message.Action](message, context);
     }
 }
