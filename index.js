@@ -11,7 +11,7 @@ exports.handler = function (event, context) {
     var topicARN = event.Records[0].Sns.TopicArn;
     var messageSent = Date.parse(event.Records[0].Sns.Timestamp);
     var now = Date.now();
-    var minsElapsed = Math.ceil((now - messageSent) / 60);
+    var minsElapsed = Math.ceil((now - messageSent) / 60000);
 
     var message = JSON.parse(event.Records[0].Sns.Message);
 
