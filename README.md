@@ -13,7 +13,7 @@ It uses S3 put notifications to trigger the Lambda function, then SNS retries to
 
 Here's a general diagram of how it works:
 
--> {% img http://hipsterdevblog.com/images/posts/opsworks_codepipeline/codepipelineopsworks-diagram.png %} <-
+![Diagram](http://hipsterdevblog.com/images/posts/opsworks_codepipeline/codepipelineopsworks-diagram.png)
 
 ## How do I develop on this?
 
