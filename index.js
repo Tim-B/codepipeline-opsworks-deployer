@@ -6,12 +6,20 @@ var actions = {
 };
 
 exports.handler = function (event, context) {
+
+
+    var topicARN = event.Records[0].Sns.TopicArn;
+    var messageSent = Date.parse(event.Records[0].Sns.Timestamp);
+    var now = Date.now();
+    var minsElapsed = Math.ceil((now - messageSent) / 60);
+
     var message = JSON.parse(event.Records[0].Sns.Message);
+
     if(typeof message.Action == 'undefined') {
         message.Action = 'handleJob';
     }
 
     if(typeof actions[message.Action] != 'undefined') {
-        actions[message.Action](message, context);
+        actions[message.Action](message, topicARN, minsElapsed, context);
     }
 }

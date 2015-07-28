@@ -5,6 +5,8 @@
       "EventVersion": "1.0",
       "EventSubscriptionArn": "arn:aws:sns:us-east-1:608866947342:test:8a1787b2-2665-4fb6-9e12-432356234",
       "Sns": {
+        "TopicArn":"arn:aws:sns:us-east-1:123456789012:lambda_topic",
+        "Timestamp":"2015-04-02T07:36:57.451Z",
         "Message": "{\"Action\":\"monitorJob\",\"DeploymentId\":\"5442343-f683-48a4-bd14-fbf2f3b7b866\",\"Job\":{\"accountId\":\"231414213\",\"data\":{\"actionConfiguration\":{\"configuration\":{\"ProjectName\":\"sagasdas\"}},\"actionTypeId\":{\"category\":\"Build\",\"owner\":\"Custom\",\"provider\":\"My-Build-Provider-Name\",\"version\":\"1\"},\"artifactCredentials\":{\"accessKeyId\":\"dfsdfqdqwdqw\",\"secretAccessKey\":\"dagfgffsdaf\",\"sessionToken\":\"oisdjoasdjosaidjosasladjasojdoiasjdoasjfhgaiuosdasdsa==\"},\"inputArtifacts\":[{\"location\":{\"s3Location\":{\"bucketName\":\"codepipeline-us-east-1-7066678721\",\"objectKey\":\"test-pipeline/opsworks/bhZ5flf.zip\"},\"type\":\"S3\"},\"name\":\"opsworks\"}],\"outputArtifacts\":[{\"location\":{\"s3Location\":{\"bucketName\":\"codepipeline-us-east-1-42625434\",\"objectKey\":\"test-pipeline/adasdasd/wVwUx4t\"},\"type\":\"S3\"},\"name\":\"fasdasdasd\"}],\"pipelineContext\":{\"action\":{\"name\":\"hjedsfasd\"},\"pipelineName\":\"test-pipeline\",\"stage\":{\"name\":\"spacestation\"}}},\"id\":\"0e42167f-3454-4a70-4354-5bf13e75db45\",\"nonce\":\"3\"}}"}
   }
   ]
