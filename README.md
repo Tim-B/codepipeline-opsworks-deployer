@@ -6,6 +6,9 @@ This is a Lambda function which allows you to deploy to OpsWorks using [CodePipe
 implementing a [custom action](http://docs.aws.amazon.com/codepipeline/latest/userguide/how-to-create-custom-action.html).
  
 **You can find a full guide on setting it up [on my blog](http://hipsterdevblog.com/blog/2015/07/28/deploying-from-codepipeline-to-opsworks-using-a-custom-action-and-lambda/)**
+
+When configured you can use it just like the inbuilt stage actions: 
+![Diagram](http://hipsterdevblog.com/images/posts/opsworks_codepipeline/actionopts.png)
  
 ## How does it work?
 
