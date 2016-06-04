@@ -1,5 +1,8 @@
 # CodePipeline OpsWorks Deployer
 
+**Update: CodePipeline now has built-in support for both [Lambda](https://docs.aws.amazon.com/codepipeline/latest/userguide/how-to-lambda-integration.html)
+ and [OpsWorks](https://docs.aws.amazon.com/opsworks/latest/userguide/other-services-cp.html) so you should take a look at the built-in functionality before using this project.**
+
 ## What is this?
 
 This is a Lambda function which allows you to deploy to OpsWorks using [CodePipeline](http://aws.amazon.com/codepipeline/) by
